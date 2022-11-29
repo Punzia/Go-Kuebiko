@@ -1,0 +1,25 @@
+# Go executables
+*.exe
+build/
+
+# Go modules
+*.mod
+*.sum
+
+# VS Code
+*.vscode
+
+# Python venv
+env/
+venv/
+
+# Local folder
+local/
+.local/
+
+# Build folder
+build/
+.build/
+
+# WinSCP config
+scripts/winscp.conf.sh

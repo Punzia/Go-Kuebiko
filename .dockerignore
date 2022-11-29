@@ -1,0 +1,10 @@
+# VS Code 
+*.vscode 
+
+# Script Files 
+*.sh
+./scripts
+
+# go modules 
+go.mod
+go.sum
