@@ -4,14 +4,18 @@ import (
 	"go-kuebiko/kuebiko"
 	"log"
 	"os"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
-	// Load environment variables
-	botToken, ok := os.LookupEnv("BOT_TOKEN")
-	if !ok {
-		log.Fatal("Must set Discord token as env variable: BOT_TOKEN")
+	// Load .env
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatal("Error loading .env file")
 	}
+	// Get the bot token from .env! Space for API tokens...
+	botToken := os.Getenv("BOT_TOKEN")
 
 	// Start the bot
 	kuebiko.BotToken = botToken
