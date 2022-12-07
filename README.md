@@ -1,7 +1,7 @@
 # Go-Kuebiko
 Kuebiko Bot on Golang!
 
-go-kuebiko/
+├─ Kuebiko 
 
 ├─ scripts/
 
